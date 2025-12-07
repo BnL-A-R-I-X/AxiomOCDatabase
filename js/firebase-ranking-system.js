@@ -28,7 +28,7 @@ class FirebaseRankingSystem {
                 name: 'Darla',
                 description: 'Ranger Of The Forest',
                 category: 'Anthropomorphs',
-                url: '../darla/darla.html'
+                url: '../thea/thea.html'
             },
             {
                 id: 'caelielle',

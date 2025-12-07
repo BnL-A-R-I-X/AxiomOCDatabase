@@ -110,7 +110,7 @@ class NavigationDropdowns {
       'socials.html': '.nav-dropdown-item[href*="socials.html"]',
       'bio.html': '.nav-dropdown-item[href*="bio.html"]',
       'ariella.html': '.nav-dropdown-item[href*="ocs.html"]',
-      'darla.html': '.nav-dropdown-item[href*="ocs.html"]',
+      'thea.html': '.nav-dropdown-item[href*="ocs.html"]',
       'caelielle.html': '.nav-dropdown-item[href*="ocs.html"]',
       'aridoe.html': '.nav-dropdown-item[href*="ocs.html"]',
       'misc.html': '.nav-dropdown-item[href*="ocs.html"]'

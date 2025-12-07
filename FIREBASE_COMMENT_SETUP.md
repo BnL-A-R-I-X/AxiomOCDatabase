@@ -104,7 +104,7 @@ character_comments/
 
 ### 🚀 Testing the System
 
-1. Visit any character page (ariella.html, darla.html, etc.)
+1. Visit any character page (ariella.html, thea.html, etc.)
 2. Scroll down to see the comment section
 3. Post a test comment
 4. Open another browser/tab to see real-time updates
