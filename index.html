@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axiom's Portfolio</title>
@@ -37,10 +38,39 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
+=======
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BNL Passenger Character Records Terminal — OC Database for the USS Axiom">
+<title>OC Database // USS Axiom Terminal</title>
+
+<!-- Fonts & CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/servebot-greeting.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+    <div class="header-frame">
+        <div class="header-inner">
+            <img src="assets/logos/axiom.png" alt="BNL Axiom Logo" class="bnl-logo small-centered">
+            <div>
+                <h1>USS AXIOM // OC DATABASE</h1>
+                <p class="subtext">BNL Passenger Character Records Terminal</p>
+                <p class="status">STATUS: ONLINE — AUTHORIZED USER: <strong>A.R.I.E.L.L.A // BNL-SYSTEM-BOT</strong></p>
+                <div class="status-widgets">
+                    SHIP TIME: <strong id="shipTime"></strong> |
+                    SECTOR: <strong>BNL-7 / ALPHA</strong> |
+                    UPLINK: <strong>STABLE</strong>
+                </div>
+>>>>>>> parent of 1e9bb18 (candycane)
             </div>
         </div>
     </nav>
 
+<<<<<<< HEAD
     <main class="main-content">
         <section class="hero-section">
             <div class="hero-content">
@@ -117,6 +147,321 @@
             </div>
         </div>
     </footer>
+=======
+<!-- ===== Nav ===== -->
+<nav class="nav-bar nav-right">
+    <a href="index.html" class="nav-btn active">HOME</a>
+    
+    <div class="nav-dropdown">
+        <div class="nav-btn nav-dropdown-toggle">ARCHIVES</div>
+        <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-header">BNL Archives</div>
+            <a href="pages/ocs.html" class="nav-dropdown-item">OC Database</a>
+            <a href="#" class="nav-dropdown-item disabled coming-soon">Character Rankings [MAINTENANCE]</a>
+            <a href="pages/upcoming-commissions-v2.html" class="nav-dropdown-item">Commission Queue</a>
+        </div>
+    </div>
+    
+    <div class="nav-dropdown">
+        <div class="nav-btn nav-dropdown-toggle">PROFILE</div>
+        <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-header">👤 User Profile</div>
+            <a href="pages/bio.html" class="nav-dropdown-item">Biography</a>
+            <a href="pages/socials.html" class="nav-dropdown-item">Social Links</a>
+        </div>
+    </div>
+    
+    <div class="nav-dropdown">
+        <div class="nav-btn nav-dropdown-toggle">COMMUNITY</div>
+        <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-header">Community Hub</div>
+            <a href="#" class="nav-dropdown-item disabled coming-soon">Art Gallery</a>
+            <a href="#" class="nav-dropdown-item disabled coming-soon">User Submissions</a>
+            <a href="#" class="nav-dropdown-item disabled coming-soon">Featured Works</a>
+        </div>
+    </div>
+    
+    <div class="nav-dropdown">
+        <div class="nav-btn nav-dropdown-toggle secret-btn">ADMIN</div>
+        <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-header">🔧 Admin Panel</div>
+            <a href="pages/admin-v2.html" class="nav-dropdown-item">Administrative Control</a>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== Intro ===== -->
+<section class="terminal-intro">
+    <p>Welcome to the <strong>BNL USS Axiom Terminal Hub</strong>.  
+    Access passenger character records, crew social networks, personnel files, and ship systems through the navigation above.  
+    All operations managed by <abbr title="Automated Regulation Interface, Enforcement & Logistics Android">A.R.I.E.L.L.A</abbr> security protocols.</p>
+</section>
+
+<!-- ===== Quick Access ===== -->
+<main class="character-sections">
+    <section class="character-section">
+        <h2 class="section-title">Quick Access Menu</h2>
+        <div class="character-grid centered">
+            <a href="pages/ocs.html" class="character-card">
+                <h2>OC Database</h2>
+                <p>Browse All Character Records</p>
+            </a>
+            <div class="character-card disabled" style="opacity: 0.5; cursor: not-allowed; pointer-events: none;">
+                <h2>Character Rankings</h2>
+                <p>[SYSTEM MAINTENANCE]</p>
+            </div>
+            <a href="pages/socials.html" class="character-card">
+                <h2>Social Networks</h2>
+                <p>Crew Communication Links</p>
+            </a>
+            <a href="pages/bio.html" class="character-card">
+                <h2>Personnel File</h2>
+                <p>Creator Information</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== BNL Information Terminal ===== -->
+    <section class="character-section">
+        <h2 class="section-title">BNL Information Terminal</h2>
+        <div class="home-terminal-container">
+            <div class="home-terminal-header">
+                <div class="terminal-title">
+                    <span class="terminal-logo">████</span>
+                    BNL CLASSIFIED INFORMATION ACCESS
+                    <span class="terminal-status">LEVEL 7 READY</span>
+                </div>
+                <div class="terminal-controls">
+                    <span class="control-btn minimize">–</span>
+                    <span class="control-btn maximize">□</span>
+                    <span class="control-btn close" onclick="clearHomeTerminal()">×</span>
+                </div>
+            </div>
+
+            <div class="home-terminal-output" id="homeTerminalOutput">
+                <div class="boot-sequence">
+                    <div class="boot-line">BNL CORPORATE NETWORK v7.4.EXEC</div>
+                    <div class="boot-line">Initializing secure connection...</div>
+                    <div class="boot-line success">Connection established.</div>
+                    <div class="boot-line">Ready for input.</div>
+                    <div class="boot-line help">Type 'help' for available commands or click <a href="pages/information.html" class="terminal-link">here</a> for full terminal.</div>
+                </div>
+            </div>
+
+            <div class="home-terminal-input-line">
+                <span class="terminal-prompt">BNL-EXEC:~$ </span>
+                <input type="text" id="homeTerminalInput" class="terminal-input" autocomplete="off" placeholder="Type 'help' or 'status'...">
+                <span class="cursor">█</span>
+            </div>
+
+            <div class="home-terminal-suggestions" id="homeSuggestions"></div>
+        </div>
+    </section>
+</main>
+
+<!-- ===== Ship Status Dashboard ===== -->
+<section class="ship-status">
+    <h3>&#128752; USS AXIOM Status Dashboard</h3>
+    <div class="status-grid">
+        <div class="status-panel">
+            <h4>Life Support</h4>
+            <div class="status-bar">
+                <div class="status-fill" style="width: 98%"></div>
+            </div>
+            <span class="status-value">98% Operational</span>
+        </div>
+        <div class="status-panel">
+            <h4>Power Grid</h4>
+            <div class="status-bar">
+                <div class="status-fill warning" style="width: 76%"></div>
+            </div>
+            <span class="status-value">76% Efficiency</span>
+        </div>
+        <div class="status-panel">
+            <h4>Passenger Morale</h4>
+            <div class="status-bar">
+                <div class="status-fill" style="width: 94%"></div>
+            </div>
+            <span class="status-value">94% Satisfied</span>
+        </div>
+        <div class="status-panel">
+            <h4>A.R.I.E.L.L.A Systems</h4>
+            <div class="status-bar">
+                <div class="status-fill" style="width: 100%"></div>
+            </div>
+            <span class="status-value">100% Online</span>
+        </div>
+        <div class="status-panel">
+            <h4>Creative Protocols</h4>
+            <div class="status-bar">
+                <div class="status-fill special" style="width: 85%"></div>
+            </div>
+            <span class="status-value">85% Ready - Try "artcode"</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Two-Column Layout Section ===== -->
+<div class="two-column-layout">
+    <!-- ===== Active Passengers ===== -->
+    <section class="active-passengers half-width">
+        <h3>Recently Active Passengers</h3>
+        <div class="passenger-list">
+            <div class="passenger-entry">
+                <span class="passenger-icon">A</span>
+                <div class="passenger-info">
+                    <strong>A.R.I.E.L.L.A</strong>
+                    <small>Security Patrol - Deck 12</small>
+                </div>
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="passenger-entry">
+                <span class="passenger-icon">D</span>
+                <div class="passenger-info">
+                    <strong>Darla</strong>
+                    <small>Hydroponics Bay - Environmental Duty</small>
+                </div>
+                <span class="status-indicator online"></span>
+            </div>
+            <div class="passenger-entry">
+                <span class="passenger-icon">A</span>
+                <div class="passenger-info">
+                    <strong>Ariella Non-Mech Form</strong>
+                    <small>Recreation Lounge - Cocoa Break</small>
+                </div>
+                <span class="status-indicator idle"></span>
+            </div>
+            <div class="passenger-entry">
+                <span class="passenger-icon">C</span>
+                <div class="passenger-info">
+                    <strong>Caelielle</strong>
+                    <small>Observation Deck - Meditation</small>
+                </div>
+                <span class="status-indicator away"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Weather Report ===== -->
+    <section class="weather-report half-width">
+        <h3>Current Conditions</h3>
+        <div class="weather-grid-compact">
+            <div class="weather-card">
+                <h4>Earth</h4>
+                <div class="weather-status danger">TOXIC STORM</div>
+                <div class="weather-details">
+                    <span>47°C / 116°F</span>
+                    <span>Visibility: 0.2km</span>
+                </div>
+            </div>
+            <div class="weather-card">
+                <h4>Space</h4>
+                <div class="weather-status safe">STABLE ORBIT</div>
+                <div class="weather-details">
+                    <span>-270°C / -454°F</span>
+                    <span>Solar Activity: Minimal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== Three-Column Layout Section ===== -->
+<div class="three-column-layout">
+    <!-- ===== System Logs ===== -->
+    <section class="system-logs third-width">
+        <h3>System Log</h3>
+        <ul>
+            <li>[00:14:02] Synchronizing passenger biometric database... [COMPLETE]</li>
+            <li>[00:14:03] Query: "Darling Deer" → No matching official passenger found. (Unofficial ID flagged)</li>
+            <li>[00:14:06] Updating gallery indexes... Complete.</li>
+            <li>[00:14:07] Encrypted message received from unknown source... Decryption failed. [LOCKED]</li>
+            <li>[00:14:08] Art collaboration protocols initialized... Try terminal command for details. [ART]</li>
+            <li>[00:14:10] Maintenance routine #042 engaged. All systems nominal.</li>
+        </ul>
+    </section>
+
+    <!-- ===== News Feed ===== -->
+    <section class="news-feed third-width">
+        <h3>BNL News Network</h3>
+        <div class="news-items">
+            <div class="news-item">
+                <span class="news-date">[2110.147.14:23]</span>
+                <strong>SYSTEM UPDATE:</strong> A.R.I.E.L.L.A firmware updated to v2.8.1 - Enhanced social interaction protocols
+            </div>
+            <div class="news-item">
+                <span class="news-date">[2110.146.09:45]</span>
+                <strong>ENTERTAINMENT:</strong> New art galleries added to passenger terminals - Browse character records for updates
+            </div>
+            <div class="news-item">
+                <span class="news-date">[2110.145.16:12]</span>
+                <strong>MAINTENANCE:</strong> Hydroponics Bay expansion completed - Darla reports 15% efficiency increase
+            </div>
+            <div class="news-item classified">
+                <span class="news-date">[2110.144.22:01]</span>
+                <strong>CLASSIFIED:</strong> [DATA REDACTED] - Access Level 7 required for details
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Easter Eggs ===== -->
+    <section class="easter-eggs third-width">
+        <h3>Fun Facts / Easter Eggs</h3>
+        <ul>
+            <li title="BNL Fleet Directive 12: Keep your seat. Stay safe.">Ariella Non-Mech Form has ordered <strong>492 cups of cocoa</strong> since boarding.</li>
+            <li title="BNL Hydroponics Policy #3">Darla once tried to plant an entire forest in the hydroponics bay.</li>
+            <li title="A.R.I.E.L.L.A Humor Subroutine v2.3">Caelielle's favorite song is allegedly "Fly Me to the Moon" but records are classified.</li>
+            <li title="System error: Missing file 'MISC_FUNNYFACTS.DAT'">Misc file data constantly changes… no one knows why.</li>
+            <li title="Hidden creative protocols detected">Terminal diagnostics show unusual "artcode" signatures in recent logs...</li>
+            <li title="Unauthorized unit detection system active">Security reports mention a rogue "wall-e" unit in lower decks...</li>
+            <li title="EVE probe scanning protocols enabled">Vegetation scanner units respond to "eve" access codes...</li>
+            <li title="Captain override attempts logged">Bridge access shows failed "captain" authorization attempts...</li>
+            <li title="Planetary status classified">Earth environmental data available via "earth" command protocols...</li>
+            <li title="Specimen containment active">Botanical security mentions "plant" containment procedures...</li>
+            <li title="Project classification maximum">Mysterious "genesis" project files heavily redacted...</li>
+        </ul>
+    </section>
+</div>
+
+<!-- ===== Security Camera Feed ===== -->
+<section class="security-feed">
+    <h2 class="section-title">Live Ship Feed — Deck 07</h2>
+    <div class="camera-frame">
+        <video autoplay muted loop playsinline class="camera-video">
+            <source src="assets/video/deck07_feed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="camera-overlay">
+            <span class="cam-status">LIVE — SECURE LINK</span>
+            <span class="cam-location">BNL AXIOM // OBSERVATION BAY</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Fun Facts ===== -->
+<div class="status-ticker">
+    <marquee behavior="scroll" direction="left">
+        Ariella Non-Mech Form has ordered 492 cups of cocoa since boarding. — Darla once tried to plant a forest in the hydroponics bay. — Caelielle's favorite song is "Fly Me to the Moon" (classified). — Misc file data constantly changes… no one knows why.
+    </marquee>
+</div>
+
+<!-- ===== Footer ===== -->
+<section class="system-footer">
+    <p>© 2025 Ariella Fawnbrook // USS Axiom OC Terminal</p>
+    <p>BNL / AXIOM SYSTEM INTERFACE — VERSION <a href="pages/information.html" class="hidden-link" title="Executive Access">7.4</a></p>
+</section>
+
+<!-- ===== Live Ship Time Script ===== -->
+<script src="js/custom-dialogs.js"></script>
+<script src="js/nav-dropdowns.js"></script>
+<script src="js/shiptime.js"></script>
+<script src="js/home-terminal.js"></script>
+<script src="js/earth-day-special.js"></script>
+<script src="js/pride-month-special.js"></script>
+<script src="js/trans-awareness-special.js"></script>
+<script src="js/holiday-season-special.js"></script>
+<script src="js/servebot-greeting.js"></script>
+>>>>>>> parent of 1e9bb18 (candycane)
 
     <script src="js/main.js"></script>
     <script type="module" src="js/firebase-config.js"></script>
